@@ -16,5 +16,4 @@ describe('Main Feature', () => {
     )
     expect(component.toJSON).toMatchSnapshot()
   })
-  
 })

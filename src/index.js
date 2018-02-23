@@ -1,10 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import ReactDOM from 'react-dom'
+import App from './App'
 
-export default class extends React.Component {    
-    render() {
-        return <div>
-            This is my component
-        </div>
-    }
-}
+ReactDOM.render(<App/>, document.getElementById('root'));
