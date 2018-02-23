@@ -1,46 +1,60 @@
 # GNC COMPONENT
 
-"gnc-component" solves a very recurrent issue in a very straight forward way, some of the characteristics of it are:
+Solves a very recurrent issue in a very straight forward way, some of the characteristics of it are:
 
   - Simple configurations
-  - Optimized to obtain a better performance
-  - Easy to integrate with redux form library
+  - Optimized for obtain a better performance
+  - Easy to integrate with ...
+  
+_Note: If needed some screenshots can be included in here._
+  
 
 ## Getting Started
 
-### Installing
+### Installation
 
-To use this component is as simple as:
+As simple as simple as:
 
-With "npm":
 ```sh
 $ npm install gnc-component --save
 ```
-With "yarn"
+or with **"yarn"**
 ```sh
 $ yarn add gnc-component
 ```
+### Usage
+
+```js
+import React from 'react';
+import GncComponent from 'gnc-component';
+```
+
+```html
+...
+    <GncComponent
+        prop1
+        prop2={ <CustomComponent/> }
+    />
+...
+```
+## Example
+
+Set a Url.
 
 ## API
 
 |Prop|Values|Default|Type|Required|
 |------|------|------|------|------|
-|some| true/false | false | Boolean |
-|some| function Component |  | String |
-|some| true/false | Component |
-|some| true/false | Boolean |
+| prop1 | true/false | false | Boolean | false |
+| prop2 | Any Component | null | Function / Object | false |
 
-Anyway I share a portion of code, we could say the facade of the component, the prop-types:
-
-As well the default props used:
 
 ## Author
+> _Front End Developer_
 
-GenDecoder
+> **Mario Victor Medrano Maldonado** 
 
-Mario Victor Medrano Maldonado
-
-mario.medrano.maldonado@gmail.com
+> mario.medrano.maldonado@gmail.com
 
 ## License
 
