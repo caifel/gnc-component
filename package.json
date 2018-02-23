@@ -1,8 +1,12 @@
 {
   "name": "gnc-component",
-  "version": "1.0.6",
+  "version": "1.1.2",
   "description": "Template for React Components",
   "main": "./lib/index.js",
+  "files": [
+    "lib",
+    "index.js"
+  ],
   "scripts": {
     "build": "webpack --progress --colors --p",
     "start": "webpack-dev-server --open",
@@ -14,12 +18,13 @@
     "url": "git+https://github.com/GenDecoder/gnc-component.git"
   },
   "keywords": [
-    "React",
     "Component",
+    "React",
+    "Template",    
     "npm"
-  ],
-  "author": "Mario Medrano",
-  "license": "ISC",
+  ],  
+  "author": "Mario Victor Medrano Maldonado",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/GenDecoder/gnc-component/issues"
   },
