@@ -51,10 +51,8 @@ Set a Url.
 
 ## Author
 > _Front End Developer_
-
-> **Mario Victor Medrano Maldonado** 
-
-> mario.medrano.maldonado@gmail.com
+**Mario Victor Medrano Maldonado** 
+mario.medrano.maldonado@gmail.com
 
 ## License
 
