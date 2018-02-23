@@ -1,6 +1,6 @@
 {
   "name": "gnc-component",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Template for React Components",
   "main": "./lib/index.js",
   "scripts": {

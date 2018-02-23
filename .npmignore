@@ -1,4 +1,16 @@
+# dependencies
+/node_modules
+
+# testing
+
+# production
+/dist
+
+# misc
+yarn.lock
+
 # developer content
 /src
 webpack.config.js
-.babel.rc
+.babelrc
+.npmignore
