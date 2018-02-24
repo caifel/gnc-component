@@ -13,7 +13,7 @@ _Note: If needed some screenshots can be included in here._
 
 ### Installation
 
-As simple as simple as:
+As simple as:
 
 ```sh
 $ npm install gnc-component --save
