@@ -1,6 +1,6 @@
 {
   "name": "gnc-component",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Template for React Components",
   "main": "./lib/index.js",
   "files": [
@@ -18,12 +18,8 @@
     "url": "git+https://github.com/GenDecoder/gnc-component.git"
   },
   "keywords": [
-    "Component",
     "React",
-    "README sample",
-    "Template",
-    "npm",
-    "react lib"
+    "Component"    
   ],
   "author": "Mario Victor Medrano Maldonado",
   "license": "MIT",
