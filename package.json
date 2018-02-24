@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "build": "webpack --progress --colors --p",
-    "start": "webpack-dev-server --open",
+    "start": "webpack-dev-server -d --open",
     "test": "jest",
     "transpile": "node_modules\\.bin\\babel.cmd ./src/MyComponent.js --presents babel-preset-env --out-file ./lib/index.js"
   },
