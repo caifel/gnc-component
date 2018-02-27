@@ -1,0 +1,11 @@
+@import './styles/variables';
+
+@import './styles/mixins/basic';
+
+body {
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+}
+header {
+    @include font-size(3);
+}
