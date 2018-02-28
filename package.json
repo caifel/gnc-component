@@ -8,10 +8,10 @@
     "index.js"
   ],
   "scripts": {
-    "build": "webpack --progress --colors --p",
+    "build": "webpack --config webpack.config.prod.js --progress --colors --p",
     "start": "webpack-dev-server -d --open",
     "test": "jest",
-    "transpile": "node_modules\\.bin\\babel.cmd ./src/MyComponent.js --presents babel-preset-env --out-file ./lib/index.js"
+    "transpile": "babel ./src/MyComponent.js --out-file ./lib/index.js"
   },
   "repository": {
     "type": "git",

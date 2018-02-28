@@ -9,7 +9,7 @@ class MyComponent extends React.Component {
         prop1: "yes"
     }
     onClick = () => {
-        console.log('this is a test')
+        console.log('On component clicked');
     }
     render () {
         const me = this;

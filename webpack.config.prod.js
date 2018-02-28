@@ -31,7 +31,9 @@ module.exports = {
                 })
             },
             {
-                test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
+                test: [
+                    /\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/
+                ],
                 use: {
                     loader: 'url-loader',
                     options: {
@@ -49,6 +51,9 @@ module.exports = {
         ]
     },
     plugins: [
+        new CleanWebpackPlugin([
+            'docs/static'
+        ]),
         new ExtractTextPlugin({
             filename: 'bundle.css'
         }),
@@ -56,5 +61,5 @@ module.exports = {
             template: './src/index.html',
             filename: 'index.html'
         })
-    ]    
-}
+    ]
+};
