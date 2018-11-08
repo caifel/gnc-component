@@ -50,6 +50,7 @@ module.exports = {
             OUTPUT_PATH + '/static'
         ]),
         new ExtractTextPlugin({
+            
             filename: 'style.css'
         })
     ]

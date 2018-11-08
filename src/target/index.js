@@ -1,6 +1,5 @@
 import React from 'react';
 import Proptypes from 'prop-types';
-import './index.scss';
 import { Ttee } from './ttteee/ttee';
 import bookImg from './img/book.jpg';
 
@@ -21,18 +20,16 @@ class MyComponent extends React.Component {
         } = me.props;
         return (
             <div
-                className='test'
-                // style={{
-                //     backgroundColor: "green",
-                //     color: "white",
-                //     padding: 5
-                // }}
+                style={{
+                    backgroundColor: "green",
+                    color: "white",
+                    padding: 5
+                }}
                 onClick={ me.onClick }
             >
                 This is a test component: { prop1.toUpperCase() }
                 <Ttee />
                 <img src={bookImg} alt="book-image"/>
-                <img src={freedomImg} alt="freedom-image"/>
             </div>
         )
     }
