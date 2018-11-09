@@ -31,6 +31,7 @@ The package.json is always going to be published automatically. And don't worry 
 ## To Do
 
 * Styling in external files won't work, aphrodite or another way to put the css inside the js file must be used.
+* Eslint support
 
 ### Installation
 
