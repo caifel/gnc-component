@@ -1,6 +1,6 @@
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const HtmlWebPackPlugin = require('html-webpack-plugin');
+// const HtmlWebPackPlugin = require('html-webpack-plugin'); // Use it in normal projects, same as in webpack.config.js file made for development
 const path = require('path');
 
 const INPUT_PATH = path.resolve(__dirname, 'src/target');

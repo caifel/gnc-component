@@ -29,7 +29,9 @@ class MyComponent extends React.Component {
                {test.toUpperCase()}
             </span>
             <Ttee />
-            <button onClick={this.onClick}>Test</button>
+            <button type="button" onClick={this.onClick}>
+               {'Test'}
+            </button>
             <img src={bookImg} alt="book" />
          </div>
       );

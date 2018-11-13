@@ -1,70 +1,70 @@
 {
-  "name": "gnc-component",
-  "version": "1.1.7",
-  "description": "Template for React Components",
-  "main": "./lib/index.js",
-  "files": [
-    "lib",
-    "index.js"
-  ],
-  "scripts": {
-    "build": "webpack --config webpack.config.prod.js --progress --colors --p",
-    "start": "webpack-dev-server -d --open",
-    "test": "jest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/GenDecoder/gnc-component.git"
-  },
-  "keywords": [
-    "React",
-    "Component"
-  ],
-  "author": "Mario Victor Medrano Maldonado",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/GenDecoder/gnc-component/issues"
-  },
-  "homepage": "https://github.com/GenDecoder/gnc-component#readme",
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
-    "babel-jest": "^22.4.0",
-    "babel-loader": "^7.1.2",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
-    "clean-webpack-plugin": "^0.1.18",
-    "css-loader": "^0.28.10",
-    "eslint": "^5.9.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-prettier": "^3.3.0",
-    "eslint-import-resolver-webpack": "^0.10.1",
-    "eslint-loader": "^2.1.1",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-node": "^8.0.0",
-    "eslint-plugin-prettier": "^3.0.0",
-    "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-react": "^7.11.1",
-    "extract-text-webpack-plugin": "^3.0.2",
-    "file-loader": "^1.1.10",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^2.30.1",
-    "jest": "^22.4.0",
-    "node-sass": "^4.7.2",
-    "prettier": "^1.15.2",
-    "prop-types": "^15.6.0",
-    "react-test-renderer": "^16.2.0",
-    "sass-loader": "^6.0.6",
-    "style-loader": "^0.20.2",
-    "url-loader": "^0.6.2",
-    "webpack": "^3.11.0",
-    "webpack-dev-server": "^2.11.1"
-  },
-  "dependencies": {
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0"
-  }
+   "name": "gnc-component",
+   "version": "1.1.7",
+   "description": "Template for React Components",
+   "main": "./lib/index.js",
+   "files": [
+      "lib",
+      "index.js"
+   ],
+   "scripts": {
+      "build": "webpack --config webpack.config.prod.js --progress --colors --p",
+      "start": "webpack-dev-server -d --open",
+      "test": "jest"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/GenDecoder/gnc-component.git"
+   },
+   "keywords": [
+      "React",
+      "Component"
+   ],
+   "author": "Mario Victor Medrano Maldonado",
+   "license": "MIT",
+   "bugs": {
+      "url": "https://github.com/GenDecoder/gnc-component/issues"
+   },
+   "homepage": "https://github.com/GenDecoder/gnc-component#readme",
+   "devDependencies": {
+      "babel-cli": "^6.26.0",
+      "babel-core": "^6.26.0",
+      "babel-jest": "^22.4.0",
+      "babel-loader": "^7.1.2",
+      "babel-plugin-transform-class-properties": "^6.24.1",
+      "babel-plugin-transform-object-rest-spread": "^6.26.0",
+      "babel-preset-env": "^1.6.1",
+      "babel-preset-react": "^6.24.1",
+      "clean-webpack-plugin": "^0.1.18",
+      "css-loader": "^0.28.10",
+      "eslint": "^5.9.0",
+      "eslint-config-airbnb": "^17.1.0",
+      "eslint-config-prettier": "^3.3.0",
+      "eslint-import-resolver-webpack": "^0.10.1",
+      "eslint-loader": "^2.1.1",
+      "eslint-plugin-import": "^2.14.0",
+      "eslint-plugin-jsx-a11y": "^6.1.2",
+      "eslint-plugin-node": "^8.0.0",
+      "eslint-plugin-prettier": "^3.0.0",
+      "eslint-plugin-promise": "^4.0.1",
+      "eslint-plugin-react": "^7.11.1",
+      "extract-text-webpack-plugin": "^3.0.2",
+      "file-loader": "^1.1.10",
+      "html-loader": "^0.5.5",
+      "html-webpack-plugin": "^2.30.1",
+      "jest": "^22.4.0",
+      "node-sass": "^4.7.2",
+      "prettier": "^1.15.2",
+      "prop-types": "^15.6.0",
+      "react-test-renderer": "^16.2.0",
+      "sass-loader": "^6.0.6",
+      "style-loader": "^0.20.2",
+      "url-loader": "^0.6.2",
+      "webpack": "^3.11.0",
+      "webpack-dev-server": "^2.11.1"
+   },
+   "dependencies": {
+      "react": "^16.7.0-alpha.0",
+      "react-dom": "^16.7.0-alpha.0"
+   }
 }

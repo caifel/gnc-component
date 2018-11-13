@@ -1,14 +1,14 @@
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+// const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
-const DOCS = path.resolve(__dirname, 'docs');
+const OUT_DIR = path.resolve(__dirname, 'tmp');
 
 module.exports = {
    entry: './src/index.js',
    output: {
-      path: DOCS,
+      path: OUT_DIR,
       filename: 'bundle.js'
    },
    module: {
