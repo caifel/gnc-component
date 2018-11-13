@@ -7,7 +7,7 @@ const INPUT_PATH = path.resolve(__dirname, 'src/target');
 const OUTPUT_PATH = path.resolve(__dirname, 'lib');
 
 module.exports = {
-   entry: INPUT_PATH + '/index.js',
+   entry: `${INPUT_PATH}/index.js`,
    output: {
       path: OUTPUT_PATH,
       filename: 'index.js'
@@ -39,7 +39,7 @@ module.exports = {
       ]
    },
    plugins: [
-      new CleanWebpackPlugin([OUTPUT_PATH + '/static']),
+      new CleanWebpackPlugin([`${OUTPUT_PATH}/static`]),
       new ExtractTextPlugin({
          filename: 'style.css'
       })
