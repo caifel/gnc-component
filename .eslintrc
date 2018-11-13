@@ -1,0 +1,23 @@
+{
+   "extends": ["airbnb", "prettier"],
+   "plugins": ["react", "jsx-a11y", "import", "prettier"],
+   "rules": {
+      "prettier/prettier": ["error"],
+      "linebreak-style": "off",
+      "react/jsx-filename-extension": "off",
+      "semi": ["error", "always"],
+      "comma-dangle": ["error", "never"],
+      "react/button-has-type": "off",
+      "import/no-extraneous-dependencies": "warn",
+      "indent": ["error", 3],
+      "react/jsx-indent": ["error", 3],
+      "react/jsx-indent-props": ["error", 3]
+   },
+   "globals": {
+      "document": true,
+      "window": true
+   },
+   "settings": {
+      "import/resolver": "webpack"
+   }
+}

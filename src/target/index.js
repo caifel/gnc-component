@@ -1,38 +1,46 @@
 import React from 'react';
 import Proptypes from 'prop-types';
-import { Ttee } from './ttteee/ttee';
+import Ttee from './ttteee/ttee';
 import bookImg from './img/book.jpg';
 
 class MyComponent extends React.Component {
-    static propTypes = {
-        prop1: Proptypes.string.isRequired
-    }
-    static defaultProps = {
-        prop1: "yes"
-    }
-    onClick = () => {
-        console.log('On component clicked');
-    }
-    render () {
-        const me = this;
-        const {
-            prop1
-        } = me.props;
-        return (
-            <div
-                style={{
-                    backgroundColor: "green",
-                    color: "white",
-                    padding: 5
-                }}
-                onClick={ me.onClick }
-            >
-                This is a test component: { prop1.toUpperCase() }
-                <Ttee />
-                <img src={bookImg} alt="book-image"/>
-            </div>
-        )
-    }
+   constructor(props) {
+      super(props);
+      this.onClick = this.onClick.bind(this);
+   }
+
+   onClick() {
+      this.a = 5;
+   }
+
+   render() {
+      const { test } = this.props;
+      return (
+         <div
+            key="something"
+            style={{
+               backgroundColor: 'green',
+               color: 'white',
+               padding: 5
+            }}
+         >
+            <span>
+               {'This is a test component:'}
+               {test.toUpperCase()}
+            </span>
+            <Ttee />
+            <button onClick={this.onClick}>Test</button>
+            <img src={bookImg} alt="book" />
+         </div>
+      );
+   }
 }
+
+MyComponent.propTypes = {
+   test: Proptypes.string
+};
+MyComponent.defaultProps = {
+   test: 'yes'
+};
 
 export default MyComponent;

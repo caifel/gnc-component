@@ -1,5 +1,5 @@
 import React from 'react';
 
-export const Ttee = () => {
-   return <div>this is a test</div>
+export default function Ttee() {
+   return <div>this is a test</div>;
 }
