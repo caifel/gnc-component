@@ -12,11 +12,8 @@
       "react/jsx-indent": ["error", 3],
       "react/jsx-indent-props": ["error", 3]
    },
-   "globals": {
-      "document": true,
-      "window": true
-   },
-   "settings": {
-      "import/resolver": "webpack"
+   "env": {
+      "jest": true,
+      "browser": true
    }
 }
