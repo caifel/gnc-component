@@ -32,6 +32,11 @@ The package.json is always going to be published automatically. And don't worry 
 
 * Styling in external files won't work, aphrodite or another way to put the css inside the js file must be used.
 * Eslint support
+* This material was very useful
+  * https://www.youtube.com/watch?v=cMrDePs86Uo
+  * https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a
+  * https://github.com/babel/babel-eslint/issues/487 -- add support for this
+  * 
 
 ### Installation
 
@@ -66,10 +71,10 @@ In this case my sample component is very simple that only requires a sandBox to 
 
 ## API
 
-|Prop|Values|Default|Type|Required|
-|------|------|------|------|------|
-| prop1 | true/false | false | Boolean | false |
-| prop2 | Any Component | null | Function / Object | false |
+| Prop  | Values        | Default | Type              | Required |
+| ----- | ------------- | ------- | ----------------- | -------- |
+| prop1 | true/false    | false   | Boolean           | false    |
+| prop2 | Any Component | null    | Function / Object | false    |
 
 
 ## Author
