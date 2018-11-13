@@ -36,7 +36,7 @@ The package.json is always going to be published automatically. And don't worry 
   * https://www.youtube.com/watch?v=cMrDePs86Uo
   * https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a
   * https://github.com/babel/babel-eslint/issues/487 -- add support for this
-  * 
+  * Read this: https://medium.com/@BrodaNoel/how-to-create-a-react-component-and-publish-it-in-npm-668ad7d363ce
 
 ### Installation
 
