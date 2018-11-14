@@ -6,10 +6,17 @@ const path = require('path');
 const OUT_DIR = path.resolve(__dirname, 'tmp');
 
 module.exports = {
+   mode: 'development',
    entry: './src/index.js',
    output: {
       path: OUT_DIR,
       filename: 'bundle.js'
+   },
+   devServer: {
+      compress: true,
+      open: true,
+      port: 5000,
+      stats: 'errors-only'
    },
    module: {
       rules: [

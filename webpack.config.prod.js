@@ -7,6 +7,7 @@ const INPUT_PATH = path.resolve(__dirname, 'src/target');
 const OUTPUT_PATH = path.resolve(__dirname, 'lib');
 
 module.exports = {
+   mode: 'production',
    entry: `${INPUT_PATH}/index.js`,
    output: {
       path: OUTPUT_PATH,
