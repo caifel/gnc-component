@@ -3,11 +3,12 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
+const INPUT_DIR = path.resolve(__dirname, 'src');
 const OUT_DIR = path.resolve(__dirname, 'tmp');
 
 module.exports = {
    mode: 'development',
-   entry: './src/index.js',
+   entry: `${INPUT_DIR}/index.js`,
    output: {
       path: OUT_DIR,
       filename: 'bundle.js'
@@ -55,7 +56,7 @@ module.exports = {
          filename: 'bundle.css'
       }),
       new HtmlWebPackPlugin({
-         template: './src/index.html',
+         template: `${INPUT_DIR}/index.html`,
          filename: 'index.html'
       })
    ]

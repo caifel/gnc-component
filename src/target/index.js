@@ -25,7 +25,7 @@ class MyComponent extends React.Component {
             }}
          >
             <span>
-               {'This is a test component:'}
+               {'This is a test component :::'}
                {test.toUpperCase()}
             </span>
             <Ttee />
