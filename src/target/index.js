@@ -1,48 +1,72 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Proptypes from 'prop-types';
-import Ttee from './ttteee/ttee';
 import bookImg from './img/book.jpg';
+import Button from './components/button';
 
-class MyComponent extends React.Component {
-   constructor(props) {
-      super(props);
-      this.onClick = this.onClick.bind(this);
+// Constants
+const LOCS = {
+   // labels
+   I_am: 'I am',
+   and_I_say: 'and I say',
+   Say_something: 'Say something',
+   // random words
+   hello: 'hello',
+   welcome: 'welcome',
+   yeah: 'yeah',
+   you_rule: 'you rule',
+   try_again: 'try_again'
+};
+const WORDS = [LOCS.hello, LOCS.welcome, LOCS.yeah, LOCS.you_rule, LOCS.try_again];
+
+// Custom hook
+function useRandomWord() {
+   const [randomWord, setRandomWord] = useState('...');
+
+   function doChange() {
+      const residualWords = WORDS.filter(word => word !== randomWord);
+      setRandomWord(residualWords[Math.floor(Math.random() * residualWords.length)]);
    }
+   return [randomWord, doChange];
+}
+// Funcitional component
+function GncComponent(props) {
+   const { name } = props;
+   const [randomWord, changeRandomWord] = useRandomWord();
 
-   onClick() {
-      this.a = 5;
-   }
-
-   render() {
-      const { test } = this.props;
-      return (
-         <div
-            key="something"
-            style={{
-               backgroundColor: 'green',
-               color: 'white',
-               padding: 5
-            }}
-         >
-            <span>
-               {'This is a test component :::'}
-               {test.toUpperCase()}
-            </span>
-            <Ttee />
-            <button type="button" onClick={this.onClick}>
-               {'Test'}
-            </button>
-            <img src={bookImg} alt="book" />
+   return (
+      <div
+         key="main-container"
+         style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            backgroundColor: 'white',
+            color: 'black',
+            fontSize: 24,
+            fontWeight: 'bold',
+            padding: 20,
+            borderRadius: 8,
+            borderStyle: 'solid',
+            borderColor: 'grey',
+            borderWidth: 1
+         }}
+      >
+         <img src={bookImg} alt="book" width={100} height={100} />
+         <div style={{ display: 'inline-block', width: 500, marginLeft: 20 }}>
+            <span>{`${LOCS.I_am} `}</span>
+            <span style={{ color: 'blue' }}>{name.toUpperCase()}</span>
+            <span>{` ${LOCS.and_I_say} `}</span>
+            <span style={{ color: 'red' }}>{`"${randomWord.toUpperCase()}"`}</span>
          </div>
-      );
-   }
+         <Button onClick={changeRandomWord}>{LOCS.Say_something}</Button>
+      </div>
+   );
 }
 
-MyComponent.propTypes = {
-   test: Proptypes.string
+GncComponent.propTypes = {
+   name: Proptypes.string
 };
-MyComponent.defaultProps = {
-   test: 'yes'
+GncComponent.defaultProps = {
+   name: 'Genesis'
 };
 
-export default MyComponent;
+export default GncComponent;

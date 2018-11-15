@@ -1,6 +1,6 @@
 {
    "name": "gnc-component",
-   "version": "1.2.0",
+   "version": "1.2.3",
    "description": "Template for React Components",
    "main": "./lib/index.js",
    "files": [
@@ -47,6 +47,7 @@
       "eslint-plugin-prettier": "^3.0.0",
       "eslint-plugin-promise": "^4.0.1",
       "eslint-plugin-react": "^7.11.1",
+      "eslint-plugin-react-hooks": "^0.0.0",
       "extract-text-webpack-plugin": "^4.0.0-beta.0",
       "file-loader": "^1.1.10",
       "html-loader": "^0.5.5",
@@ -54,7 +55,6 @@
       "jest": "^22.4.0",
       "node-sass": "^4.7.2",
       "prettier": "^1.15.2",
-      "prop-types": "^15.6.0",
       "react-test-renderer": "^16.2.0",
       "sass-loader": "^6.0.6",
       "style-loader": "^0.20.2",
@@ -64,6 +64,7 @@
       "webpack-dev-server": "^3.1.10"
    },
    "dependencies": {
+      "prop-types": "^15.6.2",
       "react": "^16.7.0-alpha.0",
       "react-dom": "^16.7.0-alpha.0"
    },

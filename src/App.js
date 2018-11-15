@@ -1,12 +1,11 @@
 import React from 'react';
-import MyComponent from './target';
+import GncComponent from './target';
 
 export default function() {
    return (
       <div>
          <header>GNC COMPONENT</header>
-
-         <MyComponent />
+         <GncComponent name="gnc" />
       </div>
    );
 }

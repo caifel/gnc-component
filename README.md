@@ -38,6 +38,9 @@ The package.json is always going to be published automatically. And don't worry 
   * https://github.com/babel/babel-eslint/issues/487 -- add support for this
   * Read this: https://medium.com/@BrodaNoel/how-to-create-a-react-component-and-publish-it-in-npm-668ad7d363ce
 
+* Given that there is no good support for react hooks in codeSandbox yet, will be nice to have the "docs" file and deploy in github pages.
+  * Most probably a new webpack file will be needed, or use the same we use in dev (analyse it).
+
 ### Installation
 
 As simple as:
