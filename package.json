@@ -9,6 +9,7 @@
    ],
    "scripts": {
       "build": "webpack --config webpack.config.prod.js --progress --colors",
+      "docs": "webpack --progress --colors",
       "start": "webpack-dev-server",
       "test": "jest"
    },

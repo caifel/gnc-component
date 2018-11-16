@@ -4,7 +4,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 const INPUT_DIR = path.resolve(__dirname, 'src');
-const OUT_DIR = path.resolve(__dirname, 'tmp');
+const OUT_DIR = path.resolve(__dirname, 'docs');
 
 module.exports = {
    mode: 'development',

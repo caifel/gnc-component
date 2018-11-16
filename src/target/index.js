@@ -14,7 +14,7 @@ const LOCS = {
    welcome: 'welcome',
    yeah: 'yeah',
    you_rule: 'you rule',
-   try_again: 'try_again'
+   try_again: 'try again'
 };
 const WORDS = [LOCS.hello, LOCS.welcome, LOCS.yeah, LOCS.you_rule, LOCS.try_again];
 
