@@ -47,7 +47,8 @@ function GncComponent(props) {
             borderRadius: 8,
             borderStyle: 'solid',
             borderColor: 'grey',
-            borderWidth: 1
+            borderWidth: 1,
+            marginTop: 20
          }}
       >
          <img src={bookImg} alt="book" width={100} height={100} />

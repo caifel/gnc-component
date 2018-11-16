@@ -6,6 +6,7 @@ export default function() {
       <div>
          <header>GNC COMPONENT</header>
          <GncComponent name="gnc" />
+         <GncComponent name="mario" />
       </div>
    );
 }
