@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Proptypes from 'prop-types';
 import bookImg from './img/book.jpg';
 import Button from './components/button';
@@ -31,33 +31,55 @@ function useRandomWord() {
 // Funcitional component
 function GncComponent(props) {
    const { name } = props;
+   const [data, setData] = useState({});
    const [randomWord, changeRandomWord] = useRandomWord();
 
+   const fetchData = async () => {
+      const response = await fetch('http://hn.algolia.com/api/v1/search?query=redux');
+      const rawData = await response.json();
+      setData(rawData);
+   };
+
+   useEffect(() => {
+      fetchData();
+   }, []);
+
    return (
-      <div
-         key="main-container"
-         style={{
-            display: 'inline-flex',
-            alignItems: 'center',
-            backgroundColor: 'white',
-            color: 'black',
-            fontSize: 24,
-            fontWeight: 'bold',
-            padding: 20,
-            borderRadius: 8,
-            borderStyle: 'solid',
-            borderColor: 'grey',
-            borderWidth: 1
-         }}
-      >
-         <img src={bookImg} alt="book" width={100} height={100} />
-         <div style={{ display: 'inline-block', width: 500, marginLeft: 20 }}>
-            <span>{`${LOCS.I_am} `}</span>
-            <span style={{ color: 'blue' }}>{name.toUpperCase()}</span>
-            <span>{` ${LOCS.and_I_say} `}</span>
-            <span style={{ color: 'red' }}>{`"${randomWord.toUpperCase()}"`}</span>
+      <div>
+         <div
+            key="main-container"
+            style={{
+               display: 'inline-flex',
+               alignItems: 'center',
+               backgroundColor: 'white',
+               color: 'black',
+               fontSize: 24,
+               fontWeight: 'bold',
+               padding: 20,
+               borderRadius: 8,
+               borderStyle: 'solid',
+               borderColor: 'grey',
+               borderWidth: 1
+            }}
+         >
+            <img src={bookImg} alt="book" width={100} height={100} />
+            <div style={{ display: 'inline-block', width: 500, marginLeft: 20 }}>
+               <span>{`${LOCS.I_am} `}</span>
+               <span style={{ color: 'blue' }}>{name.toUpperCase()}</span>
+               <span>{` ${LOCS.and_I_say} `}</span>
+               <span style={{ color: 'red' }}>{`"${randomWord.toUpperCase()}"`}</span>
+            </div>
+            <Button onClick={changeRandomWord}>{LOCS.Say_something}</Button>
          </div>
-         <Button onClick={changeRandomWord}>{LOCS.Say_something}</Button>
+         {data.hits && (
+            <ul>
+               {data.hits.map(item => (
+                  <li key={item.objectID}>
+                     <a href={item.url}>{item.title}</a>
+                  </li>
+               ))}
+            </ul>
+         )}
       </div>
    );
 }
